@@ -7,7 +7,7 @@ Sistema desenvolvido para controle de empréstimo de equipamentos do campus
 
 | Nome         | Função                  |
 |--------------|-------------------------|
-| Vitoria Costa  | Desenvolvedor Backend   |
+| Vitoria Costa| Desenvolvedor Backend   |
 | Maria Souza  | Analista de Requisitos  |
 | Pedro Lima   | Testador / QA           |
 
