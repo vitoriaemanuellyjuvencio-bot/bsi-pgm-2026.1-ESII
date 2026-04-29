@@ -1,0 +1,42 @@
+# ADR-001 — Decisão Arquitetural
+
+## Contexto
+
+O sistema precisa atender os requisitos RNF03 e RNF04.
+O RNF03 exige que novos tipos possam ser adicionados sem modificar vários módulos.
+O RNF04 exige que as regras de negócio possam ser testadas sem depender de entrada de usuário ou arquivos externos.
+
+## Opções consideradas
+| Critério | Arquivo único | Em camadas | MVC |
+|---|---|---|---|
+|Atende RNF03| Não | Sim | Sim |
+|Atende RNF04 | Não | Sim | Sim |
+|Adequado para CLI sem interface gráfica | Sim | Sim | Parcialmente |
+|Familiar para equipe iniciante | Sim | Sim | Não muito |
+
+### Arquivo único
+Foi descartado porque mistura todas as responsabilidades em um único arquivo, dificultando testes e manutenção.
+
+### MVC
+Foi considerado, porém adiciona complexidade desnecessária para um sistema simples em linha de comando.
+
+### Arquitetura em camadas
+Foi escolhida porque separa responsabilidades de forma simples e facilita testes e manutenção.
+
+## Decisão
+
+O projeto utilizará arquitetura em camadas.
+
+As camadas serão organizadas da seguinte forma:
+
+- interface/ → interação com o usuário
+- servicos/ → regras de negócio
+- dados/ → armazenamento de dados
+
+Também haverá um arquivo main.py responsável pelo menu principal.
+
+## Consequências
+
+A organização do sistema ficará mais clara e modular.
+As regras de negócio poderão ser testadas separadamente.
+Novos tipos poderão ser adicionados com menor impacto no restante do sistema.
