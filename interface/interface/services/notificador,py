@@ -1,0 +1,5 @@
+# Responsabilidade: enviar notificações
+
+class Notificador:
+    def enviar(self, mensagem):
+        print(f"[EMAIL] {mensagem}")
