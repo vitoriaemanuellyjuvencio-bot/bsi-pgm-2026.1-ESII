@@ -35,4 +35,9 @@ O sistema mostra mensagens como se estivesse enviando email, mas na verdade só 
 
 ## Revisão com vocabulário técnico
 
-*(Este espaço será preenchido após a Aula 4, quando os termos técnicos corretos forem aprendidos)*
+
+- Baixa coesão: a classe principal concentra múltiplas responsabilidades (regra de negócio, acesso a dados e notificação), violando o SRP.
+- Alto acoplamento: uso de variáveis globais faz com que diferentes partes do sistema dependam diretamente do mesmo estado.
+- Violação do SRP: lógica de notificação (email/print) misturada com regras de negócio.
+- Ausência de encapsulamento: dados representados como dicionários expõem a estrutura interna.
+- Falta de separação de responsabilidades: interface (input/menu) misturada com lógica do sistema.

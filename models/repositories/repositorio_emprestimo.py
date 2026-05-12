@@ -20,3 +20,19 @@ class RepositorioEmprestimo:
 
     def buscar_emprestimos(self):
         ...
+
+    # Responsabilidade: armazenar dados de empréstimos
+
+class RepositorioEmprestimo:
+    def __init__(self):
+        self.emprestimos = []
+        self.equipamentos = {
+            "notebook": True,
+            "projetor": True
+        }
+
+    def salvar_emprestimo(self, e):
+        self.emprestimos.append(e)
+
+    def listar_emprestimos(self):
+        return self.emprestimos
