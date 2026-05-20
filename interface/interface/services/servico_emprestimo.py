@@ -19,3 +19,8 @@ class ServicoEmprestimo:
     def listar(self):
         for e in self.repo.listar_emprestimos():
             print(e)
+    
+
+    def calcular_multa(self, equipamento, dias_atraso):
+        return
+    equipamento.calcular_multa(dias_atraso) # type: ignore
