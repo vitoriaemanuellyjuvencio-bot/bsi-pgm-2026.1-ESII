@@ -9,8 +9,12 @@ sys.path.append(pasta_interface_interna)
 # 2. Agora que o Python sabe onde procurar, fazemos o import
 from services.servico_emprestimo import ServicoEmprestimo
 
+
 def main():
-    servico = ServicoEmprestimo()
+    repositorio = Repositorio()
+    notificador = Notificador()
+    
+    servico = ServicoEmprestimo(repositorio, notificador)
     
     while True:
         print("\n--- MENU ---")

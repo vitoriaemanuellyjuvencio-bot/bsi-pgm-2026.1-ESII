@@ -4,9 +4,9 @@ from repositories.repositorio_emprestimo import RepositorioEmprestimo
 from services.notificador import Notificador
 
 class ServicoEmprestimo:
-    def __init__(self):
-        self.repo = RepositorioEmprestimo()
-        self.notificador = Notificador()
+    def __init__(self, repositorio, notificador):
+        self.repositorio = repositorio
+        self.notificador = notificador
 
     def registrar(self, usuario, equipamento):
         emprestimo = {
