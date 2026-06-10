@@ -103,4 +103,5 @@ sequenceDiagram
     end
 
     servico-->>main: lista_atrasados
-```
+
+## Diagrama de classes — v2.0

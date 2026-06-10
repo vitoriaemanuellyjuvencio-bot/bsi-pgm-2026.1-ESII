@@ -29,3 +29,11 @@ Isso reduziu o acoplamento entre os módulos e tornou o sistema mais flexível e
 A mudança não foi apenas técnica, mas também conceitual, pois o controle das dependências deixou de estar dentro do serviço e passou para o módulo principal da aplicação.
 
 Segundo Valente, no Capítulo 5, a inversão de dependência reduz o acoplamento e facilita manutenção e testes do sistema.
+
+## Aula 09 — TDD
+
+O TDD e o BDD possuem objetivos semelhantes, porém atendem públicos diferentes. O TDD é mais voltado para os desenvolvedores, pois utiliza testes automatizados para validar o comportamento do sistema durante a implementação. Já o BDD utiliza uma linguagem mais próxima da linguagem natural, facilitando a comunicação entre desenvolvedores, clientes e demais interessados no projeto.
+
+Na minha opinião, o cenário BDD comunica melhor com um cliente não técnico, pois sua estrutura em Dado, Quando e Então é mais fácil de entender e representa situações reais de uso do sistema. Por outro lado, o TDD é mais eficiente para garantir a qualidade do código e detectar erros rapidamente durante o desenvolvimento.
+
+Eu utilizaria BDD para discutir requisitos e regras de negócio com clientes e TDD para implementar e validar essas regras de forma automatizada. Dessa forma, ambos se complementam e contribuem para o desenvolvimento de um software mais confiável e alinhado às necessidades dos usuários.
