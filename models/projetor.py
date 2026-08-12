@@ -1,5 +1,6 @@
 from models.equipamento import Equipamento
 
+
 class Projetor(Equipamento):
 
     def calcular_multa(self, dias_atraso):

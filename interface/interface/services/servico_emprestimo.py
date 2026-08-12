@@ -1,7 +1,5 @@
 # Responsabilidade: gerenciar regras de empréstimos
 
-from repositories.repositorio_emprestimo import RepositorioEmprestimo
-from services.notificador import Notificador
 
 class ServicoEmprestimo:
     def __init__(self, repositorio, notificador):

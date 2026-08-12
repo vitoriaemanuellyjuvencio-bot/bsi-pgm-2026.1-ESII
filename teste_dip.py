@@ -1,5 +1,7 @@
 from services.servico_emprestimo import ServicoEmprestimo
+
 from models.notebook import Notebook
+
 
 class RepositorioFalso:
     def __init__(self):

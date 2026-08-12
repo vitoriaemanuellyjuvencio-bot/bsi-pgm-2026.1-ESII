@@ -1,5 +1,6 @@
 from desconto import calcular_bonus
 
+
 def test_bonus_zero_quando_nao_adianta():
     assert calcular_bonus(0, 5) == 0.0
 def test_bonus_quando_devolve_antes():

@@ -1,6 +1,7 @@
 from dataclasses import dataclass
 from datetime import date
 
+
 @dataclass
 class Emprestimo:
     id: int
